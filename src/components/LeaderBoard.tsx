@@ -1,5 +1,4 @@
 import { Card } from "../components/ui/card";
-import { Avatar } from "../components/ui/avatar";
 import { Button } from "../components/ui/button";
 
 interface User {
@@ -41,7 +40,7 @@ const LeaderBoard = () => {
                         <div key={index} className="flex items-center justify-between">
                             <div className="flex items-center gap-3">
                                 <div className="w-11 h-11 bg-black/20 rounded-full flex items-center justify-center overflow-hidden user-block">
-                                <img className="w-8 h-8 rounded-full" src={user.avatar} />
+                                    <img className="w-8 h-8 rounded-full" src={user.avatar} />
                                 </div>
                                 <div>
                                     <p className="text-base font-bold">{user.name}</p>
@@ -50,7 +49,7 @@ const LeaderBoard = () => {
                             </div>
                             <div className="flex items-end flex-col gap-1 text-yellow-400">
                                 <div className="text-white text-base font-bold">
-                                <div className="flex items-center"><img src="http://localhost:5173/images/coin.png" /> {user.points}</div>
+                                    <div className="flex items-center"><img src="http://localhost:5173/images/coin.png" /> {user.points}</div>
                                 </div>
                                 <span className="text-gray-400 text-sm">Spent</span>
                             </div>
@@ -69,8 +68,8 @@ const LeaderBoard = () => {
                     {allStars.map((user, index) => (
                         <div key={index} className="flex items-center justify-between">
                             <div className="flex items-center gap-3">
-                            <div className="w-11 h-11 bg-black/20 rounded-full flex items-center justify-center overflow-hidden user-block">
-                                <img className="w-8 h-8 rounded-full" src={user.avatar} />
+                                <div className="w-11 h-11 bg-black/20 rounded-full flex items-center justify-center overflow-hidden user-block">
+                                    <img className="w-8 h-8 rounded-full" src={user.avatar} />
                                 </div>
                                 <div>
                                     <p className="text-base font-bold">{user.name}</p>
@@ -96,8 +95,8 @@ const LeaderBoard = () => {
                     {theBench.map((user, index) => (
                         <div key={index} className="flex items-center justify-between">
                             <div className="flex items-center gap-3">
-                            <div className="w-11 h-11 bg-black/20 rounded-full flex items-center justify-center overflow-hidden user-block">
-                                <img className="w-8 h-8 rounded-full" src={user.avatar} />
+                                <div className="w-11 h-11 bg-black/20 rounded-full flex items-center justify-center overflow-hidden user-block">
+                                    <img className="w-8 h-8 rounded-full" src={user.avatar} />
                                 </div>
                                 <div>
                                     <p className="text-base font-bold">{user.name}</p>
