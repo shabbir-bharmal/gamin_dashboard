@@ -22,7 +22,7 @@ const Sidebar = () => {
     const location = useLocation();
 
     return (
-        <aside className="h-screen bg-gradient-to-br from-gray-900 to-purple-900 p-4 w-64 flex flex-col">
+        <aside className="h-screen p-4 w-64 flex flex-col">
             {/* Logo */}
             <div className="flex items-center justify-center mb-8">
                 <img src="/logo.svg" alt="Logo" className="w-14 h-14 rounded-full border border-purple-500 p-1" />

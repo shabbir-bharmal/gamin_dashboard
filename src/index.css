@@ -117,18 +117,80 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-no-repeat bg-cover bg-[url('../images/bg-img.jpg')];
   }
 }
 
 
-@font-face {
-  font-family: "Gilroy";
-  src: url("/fonts/Gilroy-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
+
+@layer utilities {
+
+  @font-face {
+    font-family: 'Gilroy-Bold ☞';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Bold ☞'), url('/fonts/Gilroy-Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Heavy ☞';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Heavy ☞'), url('/fonts/Gilroy-Heavy.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Light ☞';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Light ☞'), url('/fonts/Gilroy-Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Medium ☞';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Medium ☞'), url('/fonts/Gilroy-Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Regular ☞';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Regular ☞'), url('/fonts/Gilroy-Regular.woff') format('woff');
+    }
+
+  
+  body {
+    font-family: 'Gilroy-Regular ☞';
+  }
+
+.cards-4{
+  box-shadow: 0px -2px 0px 0px #7a5ea3;
+  background-image: linear-gradient(to right bottom, #52416b, #53436e, #554570, #564773, #574976, #544677, #514277, #4e3f78, #453677, #3a2c75, #2f2374, #201a72);
+}
+.card-one{
+  box-shadow: 0px -2px 0px 0px #7a5ea3;
+  background-image: linear-gradient(to right bottom, #4b5171, #4d5071, #504f70, #524d6f, #554c6e, #53476e, #50436e, #4e3e6e, #46356f, #3c2c70, #302371, #201a72);
+}
+.card-two{
+  box-shadow: 0px -2px 0px 0px #7a5ea3;
+  background-image: linear-gradient(to right bottom, #4c3a64, #4f3b68, #523c6d, #563c71, #593d75, #573a76, #553777, #523478, #482d76, #3d2675, #312073, #201a72);
+}
+.card-three{
+  box-shadow: 0px -2px 0px 0px #7a5ea3;
+  background-image: linear-gradient(to right bottom, #4f376b, #4f3a6d, #4f3d6f, #4f4071, #4f4373, #4c4174, #493e74, #453c75, #3d3474, #352b74, #2b2373, #201a72);
+}  
+.user-block{
+  border: 1px solid #2a7384;
+  /* border-image: linear-gradient(to right, darkblue, darkorchid) 1; */
 }
 
-body {
-  font-family: "Gilroy", sans-serif;
 }
+
+
+

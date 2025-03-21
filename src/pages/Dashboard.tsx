@@ -13,7 +13,7 @@ const Dashboard: React.FC = () => {
             <Sidebar />
 
             {/* Scrollable Content */}
-            <div className="flex-1 flex flex-col overflow-y-auto bg-gradient-to-br from-gray-900 to-purple-900 p-6">
+            <div className="flex-1 flex flex-col overflow-y-auto p-6">
                 <div className="flex justify-between items-center mb-6">
                     <h1 className="text-white text-2xl font-semibold">General Statistics</h1>
                     <div className="flex items-center gap-4">

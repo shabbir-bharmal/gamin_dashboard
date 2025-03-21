@@ -37,7 +37,7 @@ const TopProductsApps = () => {
     return (
         <div className="grid grid-cols-2 gap-6 mt-6">
             {/* Most Remixed Products */}
-            <Card className="p-4 bg-purple-800 text-white rounded-2xl">
+            <Card className="p-4 bg-purple-800 text-white rounded-3xl border-0 card-one">
                 <div className="flex justify-between items-center mb-4">
                     <h3 className="text-lg font-semibold">Most Remixed Products</h3>
                     <Button variant="ghost" className="text-gray-400 hover:text-white text-sm">View all</Button>
@@ -67,7 +67,7 @@ const TopProductsApps = () => {
             </Card>
 
             {/* Top Used Apps */}
-            <Card className="p-4 bg-purple-800 text-white rounded-2xl">
+            <Card className="p-4 bg-purple-800 text-white rounded-3xl border-0 card-one">
                 <div className="flex justify-between items-center mb-4">
                     <h3 className="text-lg font-semibold">Top Used Apps</h3>
                     <Button variant="ghost" className="text-gray-400 hover:text-white text-sm">View all</Button>

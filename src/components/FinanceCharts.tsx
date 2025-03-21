@@ -23,7 +23,7 @@ const FinanceCharts = () => {
     return (
         <div className="grid grid-cols-2 gap-6">
             {/* Financial Overview */}
-            <Card className="p-6 bg-purple-800 text-white rounded-2xl">
+            <Card className="p-6 bg-purple-800 text-white rounded-3xl border-0 card-one">
                 <div className="flex justify-between items-center mb-4">
                     <h3 className="text-lg font-semibold">Financial Overview</h3>
                     <Button variant="ghost" className="text-gray-400 hover:text-white text-sm flex items-center gap-2">
@@ -61,7 +61,7 @@ const FinanceCharts = () => {
             </Card>
 
             {/* Ocoin Spending Pattern */}
-            <Card className="p-6 bg-purple-800 text-white rounded-2xl">
+            <Card className="p-6 bg-purple-800 text-white rounded-3xl border-0 card-one">
                 <div className="flex justify-between items-center mb-4">
                     <h3 className="text-lg font-semibold">Ocoin Spending Pattern</h3>
                     <Button variant="ghost" className="text-gray-400 hover:text-white text-sm flex items-center gap-2">
