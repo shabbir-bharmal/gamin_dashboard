@@ -17,21 +17,21 @@ const Dashboard: React.FC = () => {
                     <h1 className="text-white text-2xl font-semibold">General Statistics</h1>
                     <div className="flex items-center gap-4">
                         {/* Notification Bell with Red Dot */}
-                        <div className="relative">
+                        <div className="relative w-14 h-14 border border-[#2a7384] rounded-full flex items-center justify-center">
                             <Bell className="text-white" />
-                            <span className="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span>
+                            <span className="absolute top-0 right-1 w-3 h-3 bg-red-500 rounded-full"></span>
                         </div>
 
                         {/* Admin Profile */}
-                        <div className="flex items-center bg-opacity-10 bg-transparent rounded-full px-3 py-1">
+                        <div className="flex items-center bg-opacity-10 bg-transparent rounded-full border border-[#2a7384] pl-8 pr-20 py-2 h-14 relative">
                             <div className="text-white text-sm">
-                                <p className="font-semibold">Admin Name</p>
+                                <p className="font-bold">Admin Name</p>
                                 <p className="text-xs opacity-70">@adminname</p>
                             </div>
                             <img
                                 src="/images/profile.png"
                                 alt="Admin Avatar"
-                                className="w-15 h-15 rounded-full ml-2"
+                                className="rounded-full ml-2 absolute right-[-22px]"
                             />
                         </div>
                     </div>
