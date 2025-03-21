@@ -189,6 +189,10 @@
   border: 1px solid #2a7384;
   /* border-image: linear-gradient(to right, darkblue, darkorchid) 1; */
 }
+.month-dropdown,
+.view-all {
+  border: 1px solid #9b51aa;
+}
 
 }
 

@@ -50,7 +50,7 @@ const StatsRow = () => {
                         {/* Stat Info */}
                         <div className="text-left">
                             <h3 className="text-[26px] font-bold">{stat.value}</h3>
-                            <p className="text-lg text-gray-300">{stat.label}</p>
+                            <p className="text-base text-gray-300">{stat.label}</p>
                         </div>
                     </div>
                 </Card>

@@ -22,7 +22,7 @@ const Sidebar = () => {
     const location = useLocation();
 
     return (
-        <aside className="h-screen p-4 w-64 flex flex-col">
+        <aside className="h-screen p-8 w-64 flex flex-col">
             {/* Logo */}
             <div className="flex items-start justify-start mb-8">
                 <img src="/images/logo.png" alt="Logo" className="w-10 h-10 rounded-full border border-purple-500 p-1" />
@@ -34,7 +34,7 @@ const Sidebar = () => {
                     <Link
                         key={index}
                         to={"/"}
-                        className={`flex items-center gap-4 text-white px-4 py-3 rounded-lg transition ${location.pathname === item.path ? "bg-purple-700 border border-purple-500 shadow-md" : "hover:bg-purple-800"
+                        className={`flex items-center gap-4 text-white px-4 py-3 rounded-full duration-500 transition-all ${location.pathname === item.path ? "bg-gradient-to-r from-[#523c85] to-[#4f5392] border-2 border-white shadow-lg" : "hover:bg-gradient-to-r from-[#523c85] to-[#4f5392]"
                             }`}
                     >
                         {item.icon}
@@ -49,7 +49,7 @@ const Sidebar = () => {
                     <Link
                         key={index}
                         to={"/"}
-                        className="flex items-center gap-4 text-white px-4 py-3 rounded-lg transition hover:bg-purple-800"
+                        className="flex items-center gap-4 text-white px-4 py-3 rounded-full transition hover:bg-gradient-to-r from-[#523c85] to-[#4f5392]"
                     >
                         {item.icon}
                         {item.name}

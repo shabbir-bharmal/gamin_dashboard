@@ -18,10 +18,10 @@ const hallOfFamers: User[] = [
 ];
 
 const allStars: User[] = [
-    { name: "@MikeReyes", date: "12.10.2024", points: 7500, role: "Explorer", avatar: "/avatars/user4.jpg", roleColor: "bg-blue-400" },
-    { name: "@MikeReyes", date: "12.10.2024", points: 7500, role: "Creator", avatar: "/avatars/user5.jpg", roleColor: "bg-yellow-400" },
-    { name: "@MikeReyes", date: "12.10.2024", points: 7500, role: "Designer", avatar: "/avatars/user6.png", roleColor: "bg-cyan-400" },
-    { name: "@MikeReyes", date: "12.10.2024", points: 7500, role: "Visionary", avatar: "/avatars/user7.jpg", roleColor: "bg-pink-400" },
+    { name: "@MikeReyes", date: "12.10.2024", points: 7500, role: "Explorer", avatar: "/avatars/user4.jpg", roleColor: "bg-[#61D2FF]" },
+    { name: "@MikeReyes", date: "12.10.2024", points: 7500, role: "Creator", avatar: "/avatars/user5.jpg", roleColor: "bg-[#FFE175]" },
+    { name: "@MikeReyes", date: "12.10.2024", points: 7500, role: "Designer", avatar: "/avatars/user6.png", roleColor: "bg-[#00FFF0]" },
+    { name: "@MikeReyes", date: "12.10.2024", points: 7500, role: "Visionary", avatar: "/avatars/user7.jpg", roleColor: "bg-[#FAADFF]" },
 ];
 
 const theBench: User[] = [...allStars];
@@ -32,8 +32,8 @@ const LeaderBoard = () => {
             {/* Hall of Famers */}
             <Card className="p-6 bg-purple-800 text-white rounded-3xl border-0 card-one">
                 <div className="flex justify-between items-center">
-                    <h3 className="text-lg font-semibold">Hall of famers - Top Remixers</h3>
-                    <Button variant="ghost" className="">View all</Button>
+                    <h3 className="text-xl font-bold">Hall of famers - Top Remixers</h3>
+                    <a href="#" className="view-all bg-black/10 px-3 py-1 rounded-full text-sm font-bold">View all</a>
                 </div>
                 <div className="space-y-4">
                     {hallOfFamers.map((user, index) => (
@@ -47,9 +47,9 @@ const LeaderBoard = () => {
                                     <p className="text-sm text-gray-400">{user.date}</p>
                                 </div>
                             </div>
-                            <div className="flex items-end flex-col gap-1 text-yellow-400">
+                            <div className="flex items-end flex-col">
                                 <div className="text-white text-base font-bold">
-                                    <div className="flex items-center"><img src="http://localhost:5173/images/coin.png" /> {user.points}</div>
+                                    <div className="flex items-center"><img src="/images/coin.png" /> {user.points}</div>
                                 </div>
                                 <span className="text-gray-400 text-sm">Spent</span>
                             </div>
@@ -61,8 +61,8 @@ const LeaderBoard = () => {
             {/* All Stars */}
             <Card className="p-6 bg-purple-800 text-white rounded-3xl border-0 card-two">
                 <div className="flex justify-between items-center">
-                    <h3 className="text-lg font-semibold">All Stars - Loyal Subscribers</h3>
-                    <Button variant="ghost" className="">View all</Button>
+                    <h3 className="text-xl font-bold">All Stars - Loyal Subscribers</h3>
+                    <a href="#" className="view-all bg-black/10 px-3 py-1 rounded-full text-sm font-bold">View all</a>
                 </div>
                 <div className="space-y-4">
                     {allStars.map((user, index) => (
@@ -76,9 +76,15 @@ const LeaderBoard = () => {
                                     <p className="text-sm text-gray-400">{user.date}</p>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-2">
-                                <span className={`px-2 py-1 text-xs rounded-lg text-white ${user.roleColor}`}>{user.role}</span>
-                                <span className="text-xs text-gray-300">🔥 {user.points} Active Strike</span>
+                            <div className="flex items-center gap-4">
+                                <span className={`px-2.5 py-1 text-sm font-bold rounded-full text-black ${user.roleColor}`}>{user.role}</span>
+                                <div className="flex items-end flex-col">
+                                <div className="text-white text-base font-bold">
+                                <div className="flex items-center gap-1.5"><img src="/images/fire.png" /> {user.points}</div>
+                                </div>
+                                <span className="text-gray-400 text-sm"> Active Strike</span>
+                            </div>
+                              
                             </div>
                         </div>
                     ))}
@@ -88,8 +94,8 @@ const LeaderBoard = () => {
             {/* The Bench */}
             <Card className="p-6 bg-purple-800 text-white rounded-3xl border-0 card-three">
                 <div className="flex justify-between items-center">
-                    <h3 className="text-lg font-semibold">The Bench - Unsubscribed Users</h3>
-                    <Button variant="ghost" className="">View all</Button>
+                    <h3 className="text-xl font-bold">The Bench - Unsubscribed Users</h3>
+                    <a href="#" className="view-all bg-black/10 px-3 py-1 rounded-full text-sm font-bold">View all</a>
                 </div>
                 <div className="space-y-4">
                     {theBench.map((user, index) => (
@@ -103,9 +109,15 @@ const LeaderBoard = () => {
                                     <p className="text-sm text-gray-400">{user.date}</p>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-2">
-                                <span className={`px-2 py-1 text-xs rounded-lg text-white ${user.roleColor}`}>{user.role}</span>
-                                <span className="text-xs text-gray-300">🔥 {user.points} Active Strike</span>
+                            <div className="flex items-center gap-4">
+                                <span className={`px-2.5 py-1 text-sm font-bold rounded-full text-black ${user.roleColor}`}>{user.role}</span>
+                                
+                                <div className="flex items-end flex-col">
+                                <div className="text-white text-base font-bold">
+                                <div className="flex items-center gap-1.5"><img src="/images/fire.png" /> {user.points}</div>
+                                </div>
+                                <span className="text-gray-400 text-sm"> Active Strike</span>
+                            </div>
                             </div>
                         </div>
                     ))}
