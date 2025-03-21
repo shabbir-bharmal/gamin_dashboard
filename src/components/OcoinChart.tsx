@@ -49,7 +49,7 @@ export default function OcoinChart() {
                     />
                     <YAxis
                         stroke="white"
-                        domain={[0, 400000]}
+                        domain={[0, 450000]}
                         tickFormatter={formatYAxis}
                         tick={{ fontSize: 12, fill: "white" }}
                         axisLine={false}
