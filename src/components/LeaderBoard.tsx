@@ -49,7 +49,7 @@ const LeaderBoard = () => {
                             </div>
                             <div className="flex items-end flex-col gap-1 text-yellow-400">
                                 <div className="text-white text-base font-bold">
-                                    <div className="flex items-center"><img src="http://localhost:5173/images/coin.png" /> {user.points}</div>
+                                    <div className="flex items-center"><img src="/images/coin.png" /> {user.points}</div>
                                 </div>
                                 <span className="text-gray-400 text-sm">Spent</span>
                             </div>
