@@ -23,7 +23,7 @@ const CustomLabel = ({ x, y, width }: any) => (
     />
 );
 
-const formatYAxis = (tick: number) => `${tick / 1000}K`;
+const formatYAxis = (tick: number) => (tick === 0 ? "0" : `${tick / 1000}K`);
 
 export default function OcoinChart() {
     return (
