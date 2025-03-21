@@ -33,7 +33,7 @@ const Sidebar = () => {
                 {menuItems.map((item, index) => (
                     <Link
                         key={index}
-                        to={item.path}
+                        to={"/"}
                         className={`flex items-center gap-4 text-white px-4 py-3 rounded-lg transition ${location.pathname === item.path ? "bg-purple-700 border border-purple-500 shadow-md" : "hover:bg-purple-800"
                             }`}
                     >
@@ -48,7 +48,7 @@ const Sidebar = () => {
                 {bottomMenu.map((item, index) => (
                     <Link
                         key={index}
-                        to={item.path}
+                        to={"/"}
                         className="flex items-center gap-4 text-white px-4 py-3 rounded-lg transition hover:bg-purple-800"
                     >
                         {item.icon}
