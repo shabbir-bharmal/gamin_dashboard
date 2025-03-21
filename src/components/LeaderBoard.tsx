@@ -1,5 +1,4 @@
 import { Card } from "../components/ui/card";
-import { Button } from "../components/ui/button";
 
 interface User {
     name: string;
@@ -79,12 +78,12 @@ const LeaderBoard = () => {
                             <div className="flex items-center gap-4">
                                 <span className={`px-2.5 py-1 text-sm font-bold rounded-full text-black ${user.roleColor}`}>{user.role}</span>
                                 <div className="flex items-end flex-col">
-                                <div className="text-white text-base font-bold">
-                                <div className="flex items-center gap-1.5"><img src="/images/fire.png" /> {user.points}</div>
+                                    <div className="text-white text-base font-bold">
+                                        <div className="flex items-center gap-1.5"><img src="/images/fire.png" /> {user.points}</div>
+                                    </div>
+                                    <span className="text-gray-400 text-sm"> Active Strike</span>
                                 </div>
-                                <span className="text-gray-400 text-sm"> Active Strike</span>
-                            </div>
-                              
+
                             </div>
                         </div>
                     ))}
@@ -111,13 +110,13 @@ const LeaderBoard = () => {
                             </div>
                             <div className="flex items-center gap-4">
                                 <span className={`px-2.5 py-1 text-sm font-bold rounded-full text-black ${user.roleColor}`}>{user.role}</span>
-                                
+
                                 <div className="flex items-end flex-col">
-                                <div className="text-white text-base font-bold">
-                                <div className="flex items-center gap-1.5"><img src="/images/fire.png" /> {user.points}</div>
+                                    <div className="text-white text-base font-bold">
+                                        <div className="flex items-center gap-1.5"><img src="/images/fire.png" /> {user.points}</div>
+                                    </div>
+                                    <span className="text-gray-400 text-sm"> Active Strike</span>
                                 </div>
-                                <span className="text-gray-400 text-sm"> Active Strike</span>
-                            </div>
                             </div>
                         </div>
                     ))}

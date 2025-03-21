@@ -1,7 +1,5 @@
 import { Card } from "../components/ui/card";
 import { Avatar } from "../components/ui/avatar";
-import { Button } from "../components/ui/button";
-import { Eye, Download, Layers } from "lucide-react";
 
 interface Product {
     image: string;
@@ -51,31 +49,31 @@ const TopProductsApps = () => {
                                 <p className="text-sm text-gray-400">{product.date}</p>
                             </div>
                             <div className="flex items-start gap-8">
-                                 <div className="flex items-start gap-2">
-                                 <img className="relative top-0.5" src="/images/time.png" />
-                                <span className="flex items-start flex-col">
-                                <div className="text-base font-bold">{product.remixed}</div>
-                                 <div className="text-sm text-gray-400">Time Remixed</div>
-                                </span>
+                                <div className="flex items-start gap-2">
+                                    <img className="relative top-0.5" src="/images/time.png" />
+                                    <span className="flex items-start flex-col">
+                                        <div className="text-base font-bold">{product.remixed}</div>
+                                        <div className="text-sm text-gray-400">Time Remixed</div>
+                                    </span>
                                 </div>
 
                                 <div className="flex items-start gap-2">
-                                <img className="relative top-0.5" src="/images/download.png" />
-                                <span className="flex items-start flex-col">
-                                <div className="text-base font-bold">{product.downloads}</div>
-                                 <div className="text-sm text-gray-400">Download</div>
-                                </span>
+                                    <img className="relative top-0.5" src="/images/download.png" />
+                                    <span className="flex items-start flex-col">
+                                        <div className="text-base font-bold">{product.downloads}</div>
+                                        <div className="text-sm text-gray-400">Download</div>
+                                    </span>
                                 </div>
 
                                 <div className="flex items-start gap-2">
-                                <img className="relative top-1.5" src="/images/views.png" />
-                                <span className="flex items-start flex-col">
-                                <div className="text-base font-bold">{product.views}</div>
-                                 <div className="text-sm text-gray-400">Views</div>
-                                </span>
+                                    <img className="relative top-1.5" src="/images/views.png" />
+                                    <span className="flex items-start flex-col">
+                                        <div className="text-base font-bold">{product.views}</div>
+                                        <div className="text-sm text-gray-400">Views</div>
+                                    </span>
                                 </div>
 
-                                
+
                             </div>
                         </div>
                     ))}
@@ -92,10 +90,10 @@ const TopProductsApps = () => {
                     {apps.map((app, index) => (
                         <div key={index} className="flex items-center justify-between">
                             <div className="flex items-center gap-4">
-                            <div className="w-11 h-11 bg-black/20 rounded-full flex items-center justify-center overflow-hidden user-block">
-                            <Avatar className="w-[30px] h-[30px] rounded-full bg-[#F58F55]" />
+                                <div className="w-11 h-11 bg-black/20 rounded-full flex items-center justify-center overflow-hidden user-block">
+                                    <Avatar className="w-[30px] h-[30px] rounded-full bg-[#F58F55]" />
                                 </div>
-                               
+
 
                                 <div>
                                     <p className="text-base font-bold">{app.name}</p>
@@ -106,12 +104,12 @@ const TopProductsApps = () => {
                             <div className="flex items-start gap-2">
                                 <img className="relative top-0.5" src="/images/time-used.png" />
                                 <span className="flex items-start flex-col">
-                                <div className="text-base font-bold">{app.timeUsed}</div>
-                                 <div className="text-sm text-gray-400">Time Used</div>
+                                    <div className="text-base font-bold">{app.timeUsed}</div>
+                                    <div className="text-sm text-gray-400">Time Used</div>
                                 </span>
-                                </div>
-                            
-                           
+                            </div>
+
+
                         </div>
                     ))}
                 </div>
