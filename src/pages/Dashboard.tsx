@@ -1,5 +1,4 @@
-import { Bell, Settings } from "lucide-react";
-import { Avatar } from "../components/ui/avatar";
+import { Bell } from "lucide-react";
 import Sidebar from "../components/Sidebar";
 import LeaderBoard from "../components/LeaderBoard";
 import TopProductsApps from "../components/TopProductsApps";
